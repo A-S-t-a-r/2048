@@ -1,7 +1,7 @@
 #include "Game.h"
 #include <conio.h>
 
-void Game2048::HandleInput() {
+void Game::HandleInput() {
     char key = _getch();
     switch (key) {
     case 'w': case 'W': case 72:

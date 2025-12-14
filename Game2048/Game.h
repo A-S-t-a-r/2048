@@ -5,15 +5,15 @@
 #include "Control.h"
 #include <iostream>
 
-class Game2048 : public Move, public Draw, public Update, public Control {
+class Game : public Move, public Draw, public Update, public Control {
 public:
-    Game2048() {
+    Game() {
         // 初始化两次数字
         CreateNumber();
         CreateNumber();
     }
 
-    ~Game2048() override {}
+    ~Game() override {}
 
     // 实现GameBase的纯虚函数
     void Initialize() override {}

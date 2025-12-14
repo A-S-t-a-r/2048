@@ -1,7 +1,7 @@
 #include "Draw.h"
 
 void Draw::Render() {
-    setbkcolor(back);
+    setbkcolor(background);
     cleardevice();
     for (int i = 0; i < MAX_GRID; i++) {
         for (int j = 0; j < MAX_GRID; j++) {

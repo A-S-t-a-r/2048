@@ -24,3 +24,9 @@
     └── 设计模式：
         使用虚拟继承的多继承架构，实现游戏功能模块化分离
 4. 构建方式与运行方式：
+    mkdir build
+    cd build
+    cmake .. -G "Visual Studio 18 2026" -A x64
+    cmake --build . --config Release
+    cd Release
+    Game2048.exe

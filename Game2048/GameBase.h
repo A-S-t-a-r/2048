@@ -29,10 +29,12 @@ protected:
     bool flag = false;
     Color arr[13] = { zero, TwoTo1, TwoTo2, TwoTo3, TwoTo4, TwoTo5, TwoTo6,
                      TwoTo7, TwoTo8, TwoTo9, TwoTo10, TwoTo11, background };
+    int num[12] = { 0, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048 };
+
 public:
     virtual void Initialize() = 0;
     virtual void Draw() = 0;
-    void Control();
-    void Update();
-    ~Base() {}
+    virtual void Control() = 0;
+    virtual void Update() = 0;
+    virtual ~Base() {}
 };

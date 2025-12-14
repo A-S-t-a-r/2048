@@ -5,4 +5,4 @@ void Update::ProcessUpdate() {
         CreateNumber();
         flag = false;
     }
-}//ÊµÏÖÓÎÏ·×´Ì¬¸üĞÂÂß¼­
+}//å®ç°æ¸¸æˆçŠ¶æ€åŠŸèƒ½æ›´æ–°Â­

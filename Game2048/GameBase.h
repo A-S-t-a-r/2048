@@ -26,11 +26,12 @@ class Base {
 protected:
     int map[MAX_GRID][MAX_GRID] = { 0 };
     POINT pos[MAX_GRID][MAX_GRID] = { 0 };
+    bool flag = false;
     Color arr[13] = { zero, TwoTo1, TwoTo2, TwoTo3, TwoTo4, TwoTo5, TwoTo6,
                      TwoTo7, TwoTo8, TwoTo9, TwoTo10, TwoTo11, background };
 public:
-    void Initialize();
-    void Draw();
+    virtual void Initialize() = 0;
+    virtual void Draw() = 0;
     void Control();
     void Update();
     ~Base() {}

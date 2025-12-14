@@ -5,7 +5,9 @@
 #include "Control.h"
 #include <iostream>
 
-class Game : public Move, public Draw, public Update, public Control {
+class Game : public Move, public Draw, public Update, public Control 
+    //主游戏类，整合所有功能模块
+{
 public:
     Game() {
         // 初始化两次数字

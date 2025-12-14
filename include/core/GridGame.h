@@ -20,7 +20,7 @@ protected:
                 break;
             }
         }
-    }
+    }//随机生成数
 
 public:
     GridGame() {
@@ -31,7 +31,7 @@ public:
                 pos[i][j].y = i * GRID_WIDTH + (i + 1) * INTERVAL;
             }
         }
-    }
+    }//构建背景网格
 
     virtual ~GridGame() {}
-};
+};//继承GameBase，实现网格游戏基础功能

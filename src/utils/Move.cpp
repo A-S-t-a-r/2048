@@ -1,7 +1,8 @@
 #include "Move.h"
 #include<iostream>
 
-void Move::moveup() {
+void Move::moveup() //实现四个方向移动的具体算法
+{
     for (int i = 0; i < MAX_GRID; i++) {
         int temp = 0;
         for (int begin = 1; begin < MAX_GRID; begin++) {

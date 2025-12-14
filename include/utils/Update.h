@@ -6,4 +6,4 @@ public:
     Update() {}
     virtual ~Update() {}
     void ProcessUpdate();
-};
+};//更新功能类，管理游戏状态更新

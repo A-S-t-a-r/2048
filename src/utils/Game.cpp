@@ -5,7 +5,7 @@ void Game::HandleInput() {
     char key = _getch();
     switch (key) {
     case 'w': case 'W': case 72:
-        moveup();  // 调用从Move类继承的方法
+        moveup(); 
         break;
     case 's': case 'S': case 80:
         movedown();

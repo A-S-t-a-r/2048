@@ -1,6 +1,7 @@
 #include "Draw.h"
 
-void Draw::Render() {
+void Draw::Render() //实现游戏图形绘制和显示
+{
     setbkcolor(background);
     cleardevice();
     for (int i = 0; i < MAX_GRID; i++) {
@@ -13,7 +14,7 @@ void Draw::Render() {
                     if (map[i][j] != 0) {
                         char number[5] = " ";
                         settextcolor(RGB(119, 110, 101));
-                        settextstyle(50, 0, _T("����")); 
+                        settextstyle(50, 0, _T("楷体")); 
                         setbkmode(TRANSPARENT);
                         sprintf_s(number, "%d", map[i][j]);
                         int tempx = GRID_WIDTH / 2 - textwidth(number) / 2;

@@ -1,4 +1,4 @@
-﻿﻿#include"GameBase.h"
+﻿#include"Game.h"
 
 int main() {
     // 创建窗口
@@ -8,6 +8,7 @@ int main() {
     // 创建Game对象
     Game* game = new Game();
 
+    //初始化窗口和游戏循环
     while (true) {
         game->Draw();
         game->Control();

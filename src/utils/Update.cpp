@@ -5,4 +5,4 @@ void Update::ProcessUpdate() {
         CreateNumber();
         flag = false;
     }
-}
+}//实现游戏状态更新逻辑

@@ -37,4 +37,4 @@ public:
     virtual void Control() = 0;
     virtual void Update() = 0;
     virtual ~Base() {}
-};
+};//定义游戏基础数据和接口

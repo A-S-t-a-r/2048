@@ -13,7 +13,7 @@ void Draw::Render() {
                     if (map[i][j] != 0) {
                         char number[5] = " ";
                         settextcolor(RGB(119, 110, 101));
-                        settextstyle(50, 0, _T("楷体"));  // 使用正确的字体名称
+                        settextstyle(50, 0, _T("楷体")); 
                         setbkmode(TRANSPARENT);
                         sprintf_s(number, "%d", map[i][j]);
                         int tempx = GRID_WIDTH / 2 - textwidth(number) / 2;
